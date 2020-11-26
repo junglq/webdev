@@ -727,8 +727,7 @@ textarea.input {
     background-color: black;
   }
   .header__menu .header__list {
-    padding: 60px 20px 10px;
-    height: 100vh;
+    padding: 150px 20px 10px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
