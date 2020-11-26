@@ -138,6 +138,13 @@ body.lock {
   }
 }
 
+.container-2 {
+  max-width: 1077px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0px 15px;
+}
+
 .btn {
   display: inline-block;
   padding: 0px 0px;
@@ -867,18 +874,6 @@ textarea.input {
   text-align: center;
 }
 
-@media (max-width: 767.98px) {
-  .mainblock {
-    padding: 60px 0px 50px 0px;
-  }
-}
-
-@media (orientation: landscape) and (max-width: 926px) {
-  .mainblock {
-    padding: 60px 0px 20px 0px;
-  }
-}
-
 .mainblock__title {
   font-size: 64px;
   letter-spacing: 4.5px;
@@ -929,6 +924,18 @@ textarea.input {
   left: 0;
 }
 
+@media (max-width: 767.98px) {
+  .mainblock {
+    padding: 60px 0px 50px 0px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 926px) {
+  .mainblock {
+    padding: 60px 0px 20px 0px;
+  }
+}
+
 .social__mainblock {
   position: absolute;
   bottom: 0;
@@ -949,4 +956,93 @@ textarea.input {
 .social__list li:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.design {
+  padding: 120px 0px 140px 0px;
+}
+
+@media (max-width: 900px) {
+  .design {
+    padding: 50px 0px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .design {
+    padding: 30px 0px;
+  }
+}
+
+.design__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 900px) {
+  .design__body {
+    display: block;
+  }
+}
+
+.design__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 407px;
+          flex: 0 1 407px;
+}
+
+@media (max-width: 900px) {
+  .design__content {
+    margin: 0px 0px 30px 0px;
+  }
+}
+
+.design__title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0px 0px 20px 0px;
+  text-transform: uppercase;
+  color: #373737;
+  max-width: 370px;
+}
+
+@media (max-width: 900px) {
+  .design__title {
+    max-width: none;
+  }
+}
+
+.design__text {
+  margin: 0px 0px 30px 0px;
+  line-height: 1.4;
+  color: #4e4e4e;
+}
+
+.design__text span {
+  font-weight: 500;
+  color: #373737;
+}
+
+.design__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 407px;
+          flex: 0 1 407px;
+  padding-bottom: 55%;
+  max-width: 407px;
+  width: 100%;
+}
+
+@media (max-width: 479.98px) {
+  .design__img {
+    padding-bottom: 100%;
+    max-width: none;
+  }
 }
