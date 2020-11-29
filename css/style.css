@@ -139,7 +139,7 @@ body.lock {
 }
 
 .container-2 {
-  max-width: 1077px;
+  max-width: 1092px;
   margin: 0 auto;
   position: relative;
   padding: 0px 15px;
@@ -1044,5 +1044,128 @@ textarea.input {
   .design__img {
     padding-bottom: 100%;
     max-width: none;
+  }
+}
+
+.community {
+  padding: 82px 0 140px 0px;
+  background-color: #f5f6f7;
+  position: relative;
+}
+
+@media (max-width: 767.98px) {
+  .community {
+    padding: 50px 0px;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .community {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.community__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+@media (max-width: 767.98px) {
+  .community__content {
+    margin: 0px 0px 50px 0px;
+  }
+}
+
+.community .swiper-pagination-fraction {
+  top: 0;
+  font-size: 16px;
+  color: #373737;
+}
+
+.info {
+  text-align: center;
+}
+
+@media (min-width: 767.98px) {
+  .info {
+    width: 100%;
+  }
+}
+
+.info__wrapper {
+  max-width: 300px;
+}
+
+@media (max-width: 767.98px) {
+  .info__wrapper {
+    margin: 0 auto;
+  }
+}
+
+.info__user {
+  margin: 0px 0px 20px 0px;
+}
+
+.info__title {
+  margin: 0px 0px 10px 0px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 2.4px;
+  color: #373737;
+  text-transform: uppercase;
+}
+
+.info__text {
+  line-height: 1.4;
+  color: #4e4e4e;
+}
+
+.info .swiper-pagination-fraction {
+  width: auto;
+  left: auto;
+  right: 0;
+  top: -60px;
+  height: 16px;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
+@media (max-width: 767.98px) {
+  .info .swiper-pagination-fraction {
+    top: 195px;
+  }
+}
+
+.community-slider {
+  position: relative;
+}
+
+@media (min-width: 767.98px) {
+  .community-slider {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(((100vw - 40px) * 0.6) + 15px);
+            flex: 0 0 calc(((100vw - 40px) * 0.6) + 15px);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    min-width: 0;
+  }
+}
+
+.community-slider__image img {
+  max-width: 100%;
+}
+
+@media (min-width: 1092px) {
+  .community-slider {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(50vw - (0.4 - 0.5) * (1092px - 30px));
+            flex: 0 0 calc(50vw - (0.4 - 0.5) * (1092px - 30px));
   }
 }
