@@ -66,6 +66,7 @@ body {
 // ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ =====================================
 @import "forms";
 @import "header";
+@import "footer";
 // ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ =====================================
 
 .ibg {
@@ -98,7 +99,6 @@ body {
 	span {
 		position: relative;
 		z-index: 1;
-		opacity: 0.7;
 	}
 	&:hover:after {
 		background-color: #009cc2;
@@ -113,6 +113,65 @@ body {
 		left: 0;
 		transition: all 0.3s linear 0s;
 		transform: scale(0);
+	}
+}
+
+.block {
+	&__repeat {
+		padding: 120px 0px 140px 0px;
+		@media (max-width: 900px) {
+			padding: 50px 0px;
+		}
+		@media (max-width: $md4+px) {
+			padding: 30px 0px;
+		}
+	}
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media (max-width: 900px) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+	&__content {
+		flex: 0 1 407px;
+		@media (max-width: 900px) {
+			margin: 0px 0px 30px 0px;
+			flex: 0 1 auto;
+		}
+	}
+	&__img {
+		flex: 0 1 407px;
+		padding-bottom: 55%;
+		max-width: 407px;
+		width: 100%;
+		@media (max-width: $md4+px) {
+			padding-bottom: 100%;
+			max-width: none;
+		}
+	}
+	&__title {
+		font-size: 24px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		margin: 0px 0px 20px 0px;
+		text-transform: uppercase;
+		color: #373737;
+		max-width: 370px;
+		@media (max-width: 900px) {
+			max-width: none;
+		}
+	}
+	&__text {
+		margin: 0px 0px 30px 0px;
+		line-height: 1.4;
+		color: #4e4e4e;
+		span {
+			font-weight: 500;
+			color: #373737;
+		}
 	}
 }
 
@@ -201,58 +260,6 @@ body {
 // DESIGN =============================================================
 
 .design {
-	padding: 120px 0px 140px 0px;
-	@media (max-width: 900px) {
-		padding: 50px 0px;
-	}
-	@media (max-width: $md4+px) {
-		padding: 30px 0px;
-	}
-	&__body {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		@media (max-width: 900px) {
-			display: block;
-		}
-	}
-	&__content {
-		flex: 0 1 407px;
-		@media (max-width: 900px) {
-			margin: 0px 0px 30px 0px;
-		}
-	}
-	&__title {
-		font-size: 24px;
-		font-weight: 700;
-		letter-spacing: 1px;
-		margin: 0px 0px 20px 0px;
-		text-transform: uppercase;
-		color: #373737;
-		max-width: 370px;
-		@media (max-width: 900px) {
-			max-width: none;
-		}
-	}
-	&__text {
-		margin: 0px 0px 30px 0px;
-		line-height: 1.4;
-		color: #4e4e4e;
-		span {
-			font-weight: 500;
-			color: #373737;
-		}
-	}
-	&__img {
-		flex: 0 1 407px;
-		padding-bottom: 55%;
-		max-width: 407px;
-		width: 100%;
-		@media (max-width: $md4+px) {
-			padding-bottom: 100%;
-			max-width: none;
-		}
-	}
 }
 
 // COMMUNITY =============================================================
@@ -334,5 +341,145 @@ body {
 	}
 	@media (min-width: 1092px) {
 		flex: 0 0 calc(50vw - (0.4 - 0.5) * (1092px - 30px));
+	}
+}
+
+// IMPLEMENT =============================================================
+
+.implement {
+	&__body {
+		max-width: 954px;
+	}
+
+	&__img {
+		@media (max-width: 900+px) {
+			order: 1;
+		}
+	}
+
+	&__content {
+		@media (max-width: 900+px) {
+			order: 0;
+		}
+	}
+}
+
+// SIGN =============================================================
+
+.sign {
+	padding: 200px 0px 220px 0px;
+	background: #333 url(../img/signup/signup.jpg) no-repeat center;
+	background-size: cover;
+	@media (max-width: $md3+px) {
+		padding: 60px 0px;
+	}
+	&__body {
+		margin: 0 auto;
+		max-width: 381px;
+	}
+
+	&__title {
+		margin: 0px 0px 30px 0px;
+		font-size: 24px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		color: #ffffff;
+		text-transform: uppercase;
+		@media (max-width: 400px) {
+			font-size: 18px;
+		}
+	}
+
+	.form {
+		display: flex;
+		.input {
+			color: #373737;
+		}
+		.sign__btn {
+			max-width: 66px;
+			padding: 16px 25px;
+			span {
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+}
+
+// DOWNLOAD =============================================================
+
+.download {
+	background-color: #f5f6f7;
+	padding: 120px 0px;
+	@media (max-width: $md3+px) {
+		padding: 60px 0px;
+	}
+	&__body {
+		text-align: center;
+		max-width: 480px;
+		margin: 0 auto;
+	}
+
+	&__title {
+		margin: 0px 0px 20px 0px;
+		font-size: 24px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		color: #373737;
+	}
+
+	&__text {
+		margin: 0px 0px 30px 0px;
+		font-size: 14px;
+		line-height: 1.4;
+		color: #4e4e4e;
+	}
+
+	&__links {
+		display: flex;
+		justify-content: space-between;
+		max-width: 404px;
+		margin: 0 auto;
+		@media (max-width: 430px) {
+			display: inline-flex;
+			flex-direction: column;
+		}
+	}
+
+	&__link {
+		@media (max-width: 430px) {
+			&:last-child {
+				margin: 25px 0px 0px 0px;
+			}
+		}
+	}
+
+	&__btn {
+		&:after {
+			display: none;
+		}
+	}
+}
+.btn {
+	&__block {
+		display: flex;
+		padding: 0;
+		line-height: 17px;
+	}
+
+	&__block-name {
+		max-width: 127px;
+		padding: 0px 19px;
+		background-color: #00afdb;
+		white-space: nowrap;
+		line-height: 44px;
+	}
+
+	&__block-logo {
+		max-width: 59px;
+		padding: 0px 21px;
+		background-color: #009cc2;
+		display: flex;
+		align-items: center;
 	}
 }
